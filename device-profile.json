@@ -1,13 +1,13 @@
 {
  "schema": "airpods-profile/v1",
- "generated_at": "2026-11-11T04:54:31",
+ "generated_at": "2026-11-11T05:00:39",
  "source": {
   "os": "linux",
   "tool": "aap_l2cap.py",
   "capture": "../data/device-state-linux.json",
   "transport": "l2cap",
   "psm": "0x1001",
-  "device_state_json": "2026-11-11T04:51:33"
+  "device_state_json": "2026-11-11T05:00:39"
  },
  "device": {
   "name": "Pro NewGen",
@@ -89,7 +89,7 @@
    "0x09": 4,
    "0x0E": 1,
    "0x02": 2,
-   "0x04": 1,
+   "0x04": 3,
    "0x2B": 1,
    "0x06": 1
   }
@@ -134,9 +134,9 @@
   "0x26": {
    "id": "0x26",
    "name": "AdaptiveVolume",
-   "hex": "00 00 00 00",
-   "raw": 0,
-   "decoded": "unset/invalid",
+   "hex": "02 00 00 00",
+   "raw": 2,
+   "decoded": "disabled",
    "values": {
     "0": "unset/invalid",
     "1": "enabled",
@@ -146,9 +146,9 @@
   "0x28": {
    "id": "0x28",
    "name": "ConversationDetect",
-   "hex": "00 00 00 00",
-   "raw": 0,
-   "decoded": "unset/invalid",
+   "hex": "02 00 00 00",
+   "raw": 2,
+   "decoded": "disabled",
    "values": {
     "0": "unset/invalid",
     "1": "enabled",
@@ -372,10 +372,10 @@
   }
  ],
  "paired_devices": {
-  "hex": "01 11 00 9d f8 04 00 00 00 00 00 6b be 02 00 00 00 00 00 41 42 23 76 ed b8 00 00 23",
+  "hex": "01 11 00 25 09 05 00 00 00 00 00 b7 46 02 00 00 00 00 00 41 42 23 76 ed b8 00 00 23",
   "mac": "41:42:23:76:ED:B8",
-  "counter1": 325789,
-  "counter2": 179819,
+  "counter1": 330021,
+  "counter2": 149175,
   "tail": "00 00 23"
  },
  "ble_keys": {
@@ -391,7 +391,7 @@
    "trailer": 1
   },
   "right": {
-   "percent": 69,
+   "percent": 67,
    "state": "unknown",
    "trailer": 1
   },
@@ -461,7 +461,7 @@
  },
  "counts": {
   "controls": 4,
-  "frames": 16,
+  "frames": 18,
   "device_info_reports": 3
  }
 }

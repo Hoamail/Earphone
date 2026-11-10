@@ -118,8 +118,8 @@ writing zeros is what left `0x26`/`0x28` stuck at an invalid value.
 | `0x2B` | 28 bytes | paired-devices record, **changes every connection** |
 | `0x02` | 54 bytes | capabilities, frame 2 |
 | `0x09` | `24 21 23 02 00` | CallManagementConfig |
-| `0x09` | `26 00 00 00 00` | AdaptiveVolume = 0 (invalid) |
-| `0x09` | `28 00 00 00 00` | ConversationDetect = 0 (invalid) |
+| `0x09` | `26 02 00 00 00` | AdaptiveVolume = 2 (disabled) |
+| `0x09` | `28 02 00 00 00` | ConversationDetect = 2 (disabled) |
 | `0x06` | `00 00` | ear detection: both in ear |
 
 ### Battery (`0x04`)
@@ -134,7 +134,7 @@ writing zeros is what left `0x26`/`0x28` stuck at an invalid value.
 | level | 0–100 |
 | status | `00` unknown, `01` charging, `02` discharging, `04` disconnected |
 
-Captured: left 68 % (unknown), right 69 % (unknown), case 100 % (discharging).
+Captured: left 68 % (unknown), right 67 % (unknown), case 100 % (discharging).
 The trailing `01` is a fixed per-entry terminator.
 
 ### Capabilities (`0x02`)
@@ -197,7 +197,8 @@ The connect-time push is authoritative: it lists exactly four controls.
 
 Toggle encoding across the protocol is **`1` = enabled, `2` = disabled**, not
 boolean. Values outside that range are accepted and stored but meaningless —
-which is how `0x26` and `0x28` ended up at `0`.
+which is how `0x26` and `0x28` sat at `0` until the tier-1 script wrote `2` back.
+The capture in `data/` was taken after that write, so it shows `02`.
 
 ### Verified absent (41 ids)
 

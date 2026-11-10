@@ -31,6 +31,20 @@ Windows / bất kỳ máy ──► profile.py ───────────
 
 Chi tiết đầy đủ, kèm byte của từng frame: **[FINDINGS.md](FINDINGS.md)**.
 
+## Bấm là chạy
+
+`run/` có sẵn script bấm-được, chia ba tầng theo mức ảnh hưởng — xem
+[run/README.md](run/README.md). Tầng 1 sửa đúng ba thứ làm tai nghe chập chờn
+(chạy một lần, ~15 s, tự snapshot để hoàn tác). Tầng 2 tự áp lại mỗi lần kết
+nối, đọc pin, đổi ANC, và biến cú chạm tai nghe thành "bỏ quảng cáo". Tầng 3 là
+công cụ chẩn đoán.
+
+```bash
+cd run/linux && ./install-shortcuts.sh    # thêm shortcut vào menu + Desktop
+./1-fix-instability.sh                    # tầng 1
+./2-auto-apply.sh install                 # tầng 2: tự áp khi kết nối
+```
+
 ## Cấu trúc repo
 
 | Đường dẫn | Nội dung |
