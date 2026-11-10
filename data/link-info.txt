@@ -1,0 +1,28 @@
+### hcitool info
+[sudo] password for huyhoang: Requesting information ...
+	BD Address:  41:42:23:76:ED:B8
+	Device Name: Pro NewGen
+	LMP Version:  (0xe) LMP Subversion: 0x3
+	Manufacturer: Apple, Inc. (76)
+	Features page 0: 0xbf 0x2e 0x4d 0xfa 0xd8 0x3d 0x7b 0x87
+		<3-slot packets> <5-slot packets> <encryption> <slot offset> 
+		<timing accuracy> <role switch> <sniff mode> <RSSI> 
+		<channel quality> <SCO link> <HV3 packets> <CVSD> 
+		<power control> <transparent SCO> <EDR ACL 2 Mbps> 
+		<enhanced iscan> <interlaced iscan> <interlaced pscan> 
+		<inquiry with RSSI> <extended SCO> <AFH cap. perip.> 
+		<AFH cls. perip.> <LE support> <3-slot EDR ACL> 
+		<5-slot EDR ACL> <pause encryption> <AFH cap. central> 
+		<AFH cls. central> <EDR eSCO 2 Mbps> <extended inquiry> 
+		<LE and BR/EDR> <simple pairing> <encapsulated PDU> 
+		<err. data report> <non-flush flag> <LSTO> <inquiry TX power> 
+		<EPC> <extended features> 
+	Features page 1: 0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+### link quality
+Link quality: 127
+### rssi
+RSSI return value: 0
+### connections
+Connections:
+	< ACL 41:42:23:76:ED:B8 handle 51 state 1 lm CENTRAL AUTH ENCRYPT 

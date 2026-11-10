@@ -1,0 +1,21 @@
+### bluetoothctl info
+Device 41:42:23:76:ED:B8 (public)
+	Name: Pro NewGen
+	Alias: Pro NewGen
+	Class: 0x00240404 (2360324)
+	Icon: audio-headset
+	Paired: yes
+	Bonded: yes
+	Trusted: yes
+	Blocked: no
+	Connected: yes
+	LegacyPairing: no
+	UUID: Service Discovery Serve.. (00001000-0000-1000-8000-00805f9b34fb)
+	UUID: Audio Sink                (0000110b-0000-1000-8000-00805f9b34fb)
+	UUID: A/V Remote Control Target (0000110c-0000-1000-8000-00805f9b34fb)
+	UUID: A/V Remote Control        (0000110e-0000-1000-8000-00805f9b34fb)
+	UUID: Handsfree                 (0000111e-0000-1000-8000-00805f9b34fb)
+	UUID: PnP Information           (00001200-0000-1000-8000-00805f9b34fb)
+	UUID: Vendor specific           (74ec2172-0bad-4d01-8f77-997b2be0722a)
+	Modalias: bluetooth:v004Cp2014d4C1B
+	Battery Percentage: 0x46 (70)

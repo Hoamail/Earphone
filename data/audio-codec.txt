@@ -1,0 +1,48 @@
+	Name: bluez_card.41_42_23_76_ED_B8
+	Driver: module-bluez5-device.c
+	Owner Module: n/a
+	Properties:
+		api.bluez5.address = "41:42:23:76:ED:B8"
+		api.bluez5.class = "0x240404"
+		api.bluez5.connection = "disconnected"
+		api.bluez5.device = ""
+		api.bluez5.icon = "audio-headset"
+		api.bluez5.id = "46"
+		api.bluez5.path = "/org/bluez/hci0/dev_41_42_23_76_ED_B8"
+		bluez5.profile = "off"
+		device.alias = "Pro NewGen"
+		device.api = "bluez5"
+		device.bus = "bluetooth"
+		device.description = "Pro NewGen"
+		device.form_factor = "headset"
+		device.icon_name = "audio-headset-bluetooth"
+		device.name = "bluez_card.41_42_23_76_ED_B8"
+		device.product.id = "0x2014"
+		device.string = "41:42:23:76:ED:B8"
+		device.vendor.id = "bluetooth:004c"
+		media.class = "Audio/Device"
+		factory.id = "14"
+		client.id = "35"
+		object.id = "94"
+		object.serial = "292"
+	Profiles:
+		off: Off (sinks: 0, sources: 0, priority: 0, available: yes)
+		headset-head-unit: Headset Head Unit (HSP/HFP) (sinks: 1, sources: 1, priority: 1, available: yes)
+		a2dp-sink: High Fidelity Playback (A2DP Sink, codec SBC) (sinks: 1, sources: 0, priority: 18, available: yes)
+		a2dp-sink-sbc_xq: High Fidelity Playback (A2DP Sink, codec SBC-XQ) (sinks: 1, sources: 0, priority: 17, available: yes)
+		headset-head-unit-cvsd: Headset Head Unit (HSP/HFP, codec CVSD) (sinks: 1, sources: 1, priority: 2, available: yes)
+		headset-head-unit-msbc: Headset Head Unit (HSP/HFP, codec mSBC) (sinks: 1, sources: 1, priority: 3, available: yes)
+	Active Profile: a2dp-sink
+	Ports:
+		headset-output: Headset (type: Headset, priority: 0, latency offset: 0 usec, available)
+			Properties:
+				port.type = "headset"
+			Part of profile(s): a2dp-sink, a2dp-sink-sbc_xq
+		headset-hf-input: Handsfree (type: Headset, priority: 0, latency offset: 0 usec, available)
+			Properties:
+				port.type = "headset"
+			Part of profile(s): headset-head-unit, headset-head-unit-cvsd, headset-head-unit-msbc
+		headset-hf-output: Handsfree (type: Headset, priority: 0, latency offset: 0 usec, available)
+			Properties:
+				port.type = "headset"
+			Part of profile(s): headset-head-unit, headset-head-unit-cvsd, headset-head-unit-msbc

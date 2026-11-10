@@ -1,0 +1,58 @@
+Browsing 41:42:23:76:ED:B8 ...
+Service Name: Handsfree
+Service RecHandle: 0x10002
+Service Class ID List:
+  "Handsfree" (0x111e)
+  "Generic Audio" (0x1203)
+Protocol Descriptor List:
+  "L2CAP" (0x0100)
+  "RFCOMM" (0x0003)
+    Channel: 2
+Profile Descriptor List:
+  "Handsfree" (0x111e)
+    Version: 0x0107
+
+Service Name: AAP Server
+Service RecHandle: 0x4001000a
+Service Class ID List:
+  UUID 128: 74ec2172-0bad-4d01-8f77-997b2be0722a
+Protocol Descriptor List:
+  "L2CAP" (0x0100)
+    PSM: 4097
+Language Base Attr List:
+  code_ISO639: 0x656e
+  encoding:    0x6a
+  base_offset: 0x100
+  code_ISO639: 0x6672
+  encoding:    0x6a
+  base_offset: 0x110
+  code_ISO639: 0x6465
+  encoding:    0x6a
+  base_offset: 0x120
+  code_ISO639: 0x6a61
+  encoding:    0x6a
+  base_offset: 0x130
+Profile Descriptor List:
+  "" (0x4b6f7c74-07f4-49de-b0b9-ab4304728f29)
+    Version: 0x0100
+
+Service Description: PnP Information
+Service RecHandle: 0x40010009
+Service Class ID List:
+  "PnP Information" (0x1200)
+Language Base Attr List:
+  code_ISO639: 0x656e
+  encoding:    0x6a
+  base_offset: 0x100
+  code_ISO639: 0x6672
+  encoding:    0x6a
+  base_offset: 0x110
+  code_ISO639: 0x6465
+  encoding:    0x6a
+  base_offset: 0x120
+  code_ISO639: 0x6a61
+  encoding:    0x6a
+  base_offset: 0x130
+
+Browsing 41:42:23:76:ED:B8 ...
+Service Search failed: Invalid argument

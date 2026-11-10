@@ -1,0 +1,467 @@
+{
+ "schema": "airpods-profile/v1",
+ "generated_at": "2026-11-11T04:54:31",
+ "source": {
+  "os": "linux",
+  "tool": "aap_l2cap.py",
+  "capture": "../data/device-state-linux.json",
+  "transport": "l2cap",
+  "psm": "0x1001",
+  "device_state_json": "2026-11-11T04:51:33"
+ },
+ "device": {
+  "name": "Pro NewGen",
+  "mac": "41:42:23:76:ED:B8",
+  "model": "A2084",
+  "manufacturer_reported": "Apple Inc.",
+  "firmware": "1.56.1",
+  "build": "21.620040031000000.695",
+  "hardware_rev": "1.0.0",
+  "updater_app": "com.apple.accessory.updater.app.60-ANC",
+  "serial": "GWXZD0ZPLKKT",
+  "bud_serials": {
+   "left": "GX6ZPWA0JQH4",
+   "right": "GXCZPBWFJQH3"
+  },
+  "numeric_ids": {
+   "0xAF": "2172096",
+   "0x86": "79873",
+   "0xA4": "2172096"
+  }
+ },
+ "device_info_reports": [
+  {
+   "subtype": "0xAF",
+   "name": "Pro NewGen",
+   "model": "A2084",
+   "manufacturer": "Apple Inc.",
+   "serial": "GWXZD0ZPLKKT",
+   "version1": "21.620040031000000.695",
+   "version2": "21.620040031000000.695",
+   "hardware_rev": "1.0.0",
+   "updater_app": "com.apple.accessory.updater.app.multiasset.60",
+   "serial_left": "GX6ZPWA0JQH4",
+   "serial_right": "GXCZPBWFJQH3",
+   "numeric_id": "2172096",
+   "extra_fields": 0
+  },
+  {
+   "subtype": "0x86",
+   "name": "Pro NewGen",
+   "model": "A2084",
+   "manufacturer": "Apple Inc.",
+   "serial": "GWXZD0ZPLKKT",
+   "version1": "1.56.1",
+   "version2": "1.56.1",
+   "hardware_rev": "1.0.0",
+   "updater_app": "com.apple.accessory.updater.app.60-ANC",
+   "serial_left": "GX6ZPWA0JQH4",
+   "serial_right": "GXCZPBWFJQH3",
+   "numeric_id": "79873",
+   "extra_fields": 0
+  },
+  {
+   "subtype": "0xA4",
+   "name": "Pro NewGen",
+   "model": "A2084",
+   "manufacturer": "Apple Inc.",
+   "serial": "GWXZD0ZPLKKT",
+   "version1": "21.620040031000000.695",
+   "version2": "21.620040031000000.695",
+   "hardware_rev": "1.0.0",
+   "updater_app": "com.apple.accessory.updater.app.60",
+   "serial_left": "GX6ZPWA0JQH4",
+   "serial_right": "GXCZPBWFJQH3",
+   "numeric_id": "2172096",
+   "extra_fields": 0
+  }
+ ],
+ "protocol": {
+  "name": "AAP / AACP",
+  "handshake": "00 00 04 00 01 00 02 00 00 00 00 00 00 00 00 00",
+  "frame_header": "04 00 04 00 <op LE> <payload>",
+  "control_frame": "04 00 04 00 09 00 <id> <d1> <d2> <d3> <d4>",
+  "read_rule": "0x09 with zeros is a WRITE, not a query; state is pushed once on connect, ~6-9 s after the handshake",
+  "subscribe": "04 00 04 00 0F 00 FF FF FF FF",
+  "opcodes_seen": {
+   "0x00": 1,
+   "0x1D": 3,
+   "0x09": 4,
+   "0x0E": 1,
+   "0x02": 2,
+   "0x04": 1,
+   "0x2B": 1,
+   "0x06": 1
+  }
+ },
+ "services": [
+  {
+   "name": "Handsfree",
+   "uuid": null,
+   "channel": 2,
+   "psm": null,
+   "version": "0x0107"
+  },
+  {
+   "name": "AAP Server",
+   "uuid": "74ec2172-0bad-4d01-8f77-997b2be0722a",
+   "channel": null,
+   "psm": 4097,
+   "version": "0x0100"
+  }
+ ],
+ "controls": {
+  "0x0D": {
+   "id": "0x0D",
+   "name": "ListeningMode",
+   "hex": "02 00 00 00",
+   "raw": 2,
+   "decoded": "anc",
+   "values": {
+    "1": "off",
+    "2": "anc",
+    "3": "transparency",
+    "4": "adaptive"
+   }
+  },
+  "0x24": {
+   "id": "0x24",
+   "name": "CallManagementConfig",
+   "hex": "21 23 02 00",
+   "raw": 33,
+   "decoded": "4-byte bitfield (Call Management Config), not decoded"
+  },
+  "0x26": {
+   "id": "0x26",
+   "name": "AdaptiveVolume",
+   "hex": "00 00 00 00",
+   "raw": 0,
+   "decoded": "unset/invalid",
+   "values": {
+    "0": "unset/invalid",
+    "1": "enabled",
+    "2": "disabled"
+   }
+  },
+  "0x28": {
+   "id": "0x28",
+   "name": "ConversationDetect",
+   "hex": "00 00 00 00",
+   "raw": 0,
+   "decoded": "unset/invalid",
+   "values": {
+    "0": "unset/invalid",
+    "1": "enabled",
+    "2": "disabled"
+   }
+  }
+ },
+ "controls_absent": [
+  {
+   "id": "0x01",
+   "name": "MicMode"
+  },
+  {
+   "id": "0x05",
+   "name": "ButtonSendMode"
+  },
+  {
+   "id": "0x06",
+   "name": "OwnsConnection"
+  },
+  {
+   "id": "0x0A",
+   "name": "EarDetection"
+  },
+  {
+   "id": "0x12",
+   "name": "VoiceTrigger"
+  },
+  {
+   "id": "0x14",
+   "name": "SingleClick"
+  },
+  {
+   "id": "0x15",
+   "name": "DoubleClick"
+  },
+  {
+   "id": "0x16",
+   "name": "ClickHold"
+  },
+  {
+   "id": "0x17",
+   "name": "DoubleClickInterval"
+  },
+  {
+   "id": "0x18",
+   "name": "ClickHoldInterval"
+  },
+  {
+   "id": "0x1A",
+   "name": "ListeningModeConfigs"
+  },
+  {
+   "id": "0x1B",
+   "name": "OneBudAnc"
+  },
+  {
+   "id": "0x1C",
+   "name": "CrownDirection"
+  },
+  {
+   "id": "0x1E",
+   "name": "AutoAnswer"
+  },
+  {
+   "id": "0x1F",
+   "name": "ChimeVolume"
+  },
+  {
+   "id": "0x20",
+   "name": "AutoConnect"
+  },
+  {
+   "id": "0x23",
+   "name": "VolumeSwipeInterval"
+  },
+  {
+   "id": "0x25",
+   "name": "VolumeSwipe"
+  },
+  {
+   "id": "0x27",
+   "name": "SoftwareMute"
+  },
+  {
+   "id": "0x29",
+   "name": "SSL"
+  },
+  {
+   "id": "0x2C",
+   "name": "HearingAid"
+  },
+  {
+   "id": "0x2E",
+   "name": "AutoAncStrength"
+  },
+  {
+   "id": "0x2F",
+   "name": "HpsGainSwipe"
+  },
+  {
+   "id": "0x30",
+   "name": "HrmEnabled"
+  },
+  {
+   "id": "0x31",
+   "name": "InCaseTone"
+  },
+  {
+   "id": "0x32",
+   "name": "SiriMultitone"
+  },
+  {
+   "id": "0x33",
+   "name": "HearingAssist"
+  },
+  {
+   "id": "0x34",
+   "name": "AllowOffOption"
+  },
+  {
+   "id": "0x35",
+   "name": "SleepDetection"
+  },
+  {
+   "id": "0x36",
+   "name": "AllowAutoConnect"
+  },
+  {
+   "id": "0x37",
+   "name": "PpeToggle"
+  },
+  {
+   "id": "0x38",
+   "name": "PpeCapLevel"
+  },
+  {
+   "id": "0x39",
+   "name": "RawGestures"
+  },
+  {
+   "id": "0x3A",
+   "name": "TemporaryPairing"
+  },
+  {
+   "id": "0x3B",
+   "name": "DynamicEndOfCharge"
+  },
+  {
+   "id": "0x3C",
+   "name": "SystemSiriMessage"
+  },
+  {
+   "id": "0x3D",
+   "name": "HearingAidGeneric"
+  },
+  {
+   "id": "0x3E",
+   "name": "UplinkEqBud"
+  },
+  {
+   "id": "0x3F",
+   "name": "UplinkEqSource"
+  },
+  {
+   "id": "0x40",
+   "name": "InCaseToneVolume"
+  },
+  {
+   "id": "0x41",
+   "name": "DisableButtonInput"
+  }
+ ],
+ "capabilities": [
+  {
+   "bytes": 16,
+   "hex": "06 01 0e 02 02 04 01 00 00 00 10 01 40 01 80 01",
+   "pairs": [
+    "0601",
+    "0e02",
+    "0204",
+    "0100",
+    "0000",
+    "1001",
+    "4001",
+    "8001"
+   ]
+  },
+  {
+   "bytes": 54,
+   "hex": "13 01 0e 02 02 04 01 00 00 00 10 02 40 01 03 02 00 00 00 06 03 00 00 00 0a 01 09 01 0f 01 07 01 00 00 00 30 01 00 00 00 50 02 a0 01 90 01 b0 01 c0 01 d0 01 60 01",
+   "pairs": [
+    "1301",
+    "0e02",
+    "0204",
+    "0100",
+    "0000",
+    "1002",
+    "4001",
+    "0302",
+    "0000",
+    "0006",
+    "0300",
+    "0000",
+    "0a01",
+    "0901",
+    "0f01",
+    "0701",
+    "0000",
+    "0030",
+    "0100",
+    "0000",
+    "5002",
+    "a001",
+    "9001",
+    "b001",
+    "c001",
+    "d001",
+    "6001"
+   ]
+  }
+ ],
+ "paired_devices": {
+  "hex": "01 11 00 9d f8 04 00 00 00 00 00 6b be 02 00 00 00 00 00 41 42 23 76 ed b8 00 00 23",
+  "mac": "41:42:23:76:ED:B8",
+  "counter1": 325789,
+  "counter2": 179819,
+  "tail": "00 00 23"
+ },
+ "ble_keys": {
+  "present": true,
+  "redacted": true,
+  "payload_bytes": 32,
+  "note": "static 2x16-byte key material, removed before publishing"
+ },
+ "battery": {
+  "left": {
+   "percent": 68,
+   "state": "unknown",
+   "trailer": 1
+  },
+  "right": {
+   "percent": 69,
+   "state": "unknown",
+   "trailer": 1
+  },
+  "case": {
+   "percent": 100,
+   "state": "discharging",
+   "trailer": 1
+  }
+ },
+ "codec": {
+  "profiles": [
+   {
+    "profile": "off",
+    "description": "Off",
+    "codec": null
+   },
+   {
+    "profile": "headset-head-unit",
+    "description": "Headset Head Unit (HSP/HFP)",
+    "codec": null
+   },
+   {
+    "profile": "a2dp-sink",
+    "description": "High Fidelity Playback (A2DP Sink, codec SBC)",
+    "codec": "SBC"
+   },
+   {
+    "profile": "a2dp-sink-sbc_xq",
+    "description": "High Fidelity Playback (A2DP Sink, codec SBC-XQ)",
+    "codec": "SBC-XQ"
+   },
+   {
+    "profile": "headset-head-unit-cvsd",
+    "description": "Headset Head Unit (HSP/HFP, codec CVSD)",
+    "codec": "CVSD"
+   },
+   {
+    "profile": "headset-head-unit-msbc",
+    "description": "Headset Head Unit (HSP/HFP, codec mSBC)",
+    "codec": "mSBC"
+   }
+  ],
+  "card": "bluez_card.41_42_23_76_ED_B8",
+  "active_profile": "a2dp-sink",
+  "vendor_id": "bluetooth:004c",
+  "product_id": "0x2014",
+  "codec": "SBC"
+ },
+ "link": {
+  "lmp_version": 14,
+  "lmp_subversion": 3,
+  "manufacturer": "Apple, Inc. (76)",
+  "features_page0": "0xbf 0x2e 0x4d 0xfa 0xd8 0x3d 0x7b 0x87",
+  "features_page1": "0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00",
+  "link_quality": 127,
+  "rssi": 0,
+  "acl": {
+   "peer": "41:42:23:76:ED:B8",
+   "handle": 51,
+   "state": 1,
+   "role": "CENTRAL",
+   "security": "AUTH ENCRYPT"
+  },
+  "class_of_device": "0x00240404",
+  "modalias": "bluetooth:v004Cp2014d4C1B",
+  "battery_percent_cache": 70
+ },
+ "counts": {
+  "controls": 4,
+  "frames": 16,
+  "device_info_reports": 3
+ }
+}
